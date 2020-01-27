@@ -1,0 +1,84 @@
+#app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #294157;
+    min-height: 100%;
+  }
+
+  .top {
+    justify-content: space-between;
+    display: flex;
+    margin: 1rem 0;
+  }
+
+  .main {
+    padding: 1rem;
+    border: 1px solid ghostwhite;
+  }
+
+  /* SWITCH THEME BUTTONS */
+
+  .switch-theme-field {
+    overflow: hidden;
+    display: flex;
+  }
+
+  .switch-theme-field input {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+  }
+
+  .switch-theme-field label {
+    background-color: #cecdcd;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    padding: .5rem .7rem;
+    margin-right: -1px;
+    transition: all 0.1s ease-in-out;
+    font-weight: bold;
+  }
+
+  .switch-theme-field label:hover {
+    cursor: pointer;
+  }
+
+  .switch-theme-field input:checked + label {
+    background-color: #c014b7;
+    box-shadow: none;
+  }
+
+  /* BUTTONS */
+
+  button {
+        color: white;
+        padding: .5rem;
+        border: none;
+        font-weight: bold;
+        width: fit-content;
+  }
+
+  .open_all {
+        display: flex;
+        background-color: rgb(243, 203, 22);
+        color: rgb(43, 43, 43);
+        font-weight: bold;
+        padding: .3rem;
+        border: none;
+  }
+
+  .modal_btn {
+    display: flex;
+    background-color: #294157;
+  }
+
+  .button_hide {
+        display: none;
+  }
